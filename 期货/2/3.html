@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>智能行情分析系统</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/share.css">
+    <link rel="stylesheet" href="static/css/n_pc_touzi.css">
+    <script type="text/javascript" src="static/js/jquery-2.2.4.min.js"></script>
+    <!-- <script type="text/javascript" src="static/js/layer.js"></script> -->
+    <link rel="stylesheet" href="static/css/layer.css" id="layuicss-layer">
+    <link rel="stylesheet" href="static/css/form.css">
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <style>
+        .btn-get {
+            color: #ffffff;
+            letter-spacing: 0.1rem;
+            font-size: 13.4px;
+            font-weight: 500;
+
+
+        }
+
+        .dz_yzm {
+            background-color: #41A5DD;
+            outline: none;
+            border: 0ch;
+            border-radius: 0rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-1">
+        <ul class="downs clearfix">
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_1.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_2.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_3.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="div-2">
+        <ul class="downs clearfix">
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_1.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_2.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_3.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="div-3">
+        <ul class="downs clearfix">
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_1.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_2.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="static/picture/btn_3.png" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- <div class="copyright">
+
+</div> -->
+    <div class="div-5 navbar-fixed-bottom">
+        <h3>输入手机号码，免费下载使用：</h3>
+        <div id="ftuserreg">
+            <div class="input formdata">
+                <span>姓名：</span>
+                <input type="text" placeholder="先生/女士" class="in name in_name1" id="tg_name1">
+                <span>手机号码：</span>
+                <input type="text" placeholder="输入手机号码" class="in tel in_phone1" id="tg_mbn1">
+                <input type="button" value="立即下载" class="btn2 submit in_btn1" data-id="1">
+            </div>
+        </div>
+    </div>
+
+    <!--遮罩层-->
+    <div class="layui-layer-shade" id="layui-layer-shade3" time="3" style="display:none;"></div>
+    <!--表单-->
+    <div class="popform" style="display: none;">
+        <div id="">
+            <div id="modal-form" style="display: block;">
+                <p style="font-size: 40px;color:#41A5DD ;text-align: center;padding-top: 40px;">免费下载</p>
+                <p
+                    style="font-weight:normal; color:#999; font-family:宋体; font-size:14px;text-align: center;padding-top:10px;">
+                    （请正确填写手机号码，以便获取软件账号和密码！）</p>
+                <div class="validate nice-validator n-default">
+
+                    <div class="form-content ">
+                        <div class="form-group">
+                            <label for="txtName1" class="form-label">姓&nbsp;&nbsp;名</label>
+                            <div class="form-input">
+                                <input type="text" class="name in_name2" placeholder="请输入姓名" id="name">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPhone1" class="form-label">手机号</label>
+                            <div class="form-input">
+                                <input type="text" maxlength="11" placeholder="请输入手机号码" class="tel in_phone2" id="tel">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+
+                        <div class="form-group " style="height: 70px">
+                            <span class="form-group_button in_btn2" data-id="2">立即下载</span>
+
+                        </div>
+                        <div class="form-footer-text">
+                            <p>我们采用加密技术确保您的信息安全，您的联系信息仅用于注册期货软件，请放心提交</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="tg_name2">
+    <input type="hidden" id="tg_mbn2">
+    <input type="hidden" id="tg_code2">
+    <script>
+        var mask = $('#layui-layer-shade3');
+        var Form = $('.popform');
+        var closeBtn = $('.layui-layer-close');
+        $('.downs li').click(() => {
+            $(mask).css('display', 'block');
+            $(Form).css('display', 'block');
+        })
+        $(closeBtn).click(function () {
+            $(mask).css('display', 'none');
+            $(Form).css('display', 'none');
+        });
+
+
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+                alert('页面内容无法正常展示，请在pc端打开此链接');
+                window.location.href = 'error.html'
+            } else {
+
+
+            }
+        }
+        browserRedirect();
+        let geturl="{$data.wid}"
+    </script>
+    <script src='../sendform.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="MobileOptimized" content="320">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <title>股票打分</title>
+
+	<link rel="stylesheet" href="static/css/style.css">
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/data-a.js"></script>
+	<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
+	<script>
+		$(function () {
+			setInterval(function () {
+				var pe = Math.floor(Math.random() * 70 + 30);
+				$('.lvtt i code').text(pe)
+			}, 2000)
+		})
+	</script>
+
+
+	<script type="text/javascript">
+		function digitize(n) {
+			var str = n + "";
+			var arr = [];
+			str.split("").forEach(function (item) {
+				arr.push(parseInt(item));
+			})
+			return arr;  //返回结果数组
+		}
+		var result = '';
+		var axnum = 30571;
+		//诊股人数增加
+		var numper = setInterval(function () {
+			var ssx = axnum;
+			result = '';
+			var penum = parseInt($('#num').text());
+			var pe = Math.floor(Math.random() * 5 + 1);
+			axnum = ssx - pe;
+
+			for (var i = 0; i < digitize(ssx).length; i++) {
+				var temp = '<i>' + digitize(ssx)[i] + '</i>';
+				result = result + temp;
+			}
+			$('#num').text(penum + pe);
+			$('.enum').html(result);
+
+		}, 2500)
+
+	</script>
+</head>
+
+<body>
+	<div class="tan_div box_bg80" id="SonContent0">
+		<div class="tan_content tan_400">
+			<div class="tan_close"> </div>
+			<div class="tan_title">
+				<span class="discuss"></span>
+				<div class="barbox">
+					<div class="barline">
+						<div class="charts"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dialog">
+			<div class="circle">
+				<img src="static/picture/circle.png" alt="">
+			</div>
+			<div class="dialog_roll">
+				<div class="dialogBg center">
+					<span></span>测评结果已计算完成 </div>
+				<div class="dialogBgc">
+					<img src="static/picture/star.png" alt="">
+				</div>
+				<input class="phonec" type="tel" id="tgMobile" name="tgMobile" placeholder="请输入手机号码" maxlength="11">
+				<div id="btnTg" class="dialogBtn center" onclick="return check()"> 免费领取 </div>
+				<div class="center dialog_zi">稍后会有客服人员联系您，确保结果发送成功</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="wrap clearfix">
+
+		<div class="lwtop">
+			<div class="lvtt">
+				<img class="bk" src="static/picture/lw_t_yk.png" />
+				<span class="num">
+					<img src="static/picture/lw_t_q.png" />
+				</span>
+				<img src="static/picture/lw_t_ld.png" class="le" />
+				<img src="static/picture/sx.png" class="sx" />
+				<img src="static/picture/lw_t_bt.png" class="bt" />
+				<i>
+					<code>75</code>%</i>
+			</div>
+			<div class="lvtc">
+				<div class="ted">
+					<input type="tel" class="gpdm" placeholder="请输入股票代码" maxlength="6" />
+					<a href="javascript:void(0)" class="cdbut" id="sm1">搜索</a>
+				</div>
+				
+					<p>稍后会有客服人员联系您</p>
+					<p>预测结果仅供参考，请以实际开盘为准</p>
+			</div>
+		</div>
+
+
+		<div class="data">
+			<div class="row">
+				<div class="gupiao clearfix">
+					<div class="t1">
+						<div class="gName">--</div>
+						<div class="gCode center">--</div>
+					</div>
+					<div class="t2">
+						<div class="zhishu">
+							<span class="xianjia"></span>
+							<img src="static/picture/arrow.png" alt="">
+						</div>
+						<div>
+							<span class="zhangdie red"></span>
+							<span class="zhangfu red"></span>
+							<div class="time" id="new_data"></div>
+						</div>
+					</div>
+				</div>
+				<div class="dongtai">
+					<div class="tablecontent">
+						<table>
+							<thead>
+								<tr>
+									<th>今开</th>
+									<th>最高</th>
+									<th>换手</th>
+									<th>成交量</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="jinkai"></td>
+									<td class="zuigao"></td>
+									<td class="huanshou"></td>
+									<td class="chengjiaoliang"></td>
+								</tr>
+								<tr style="height: 12px">
+									<td style="height: 12px;"></td>
+								</tr>
+							</tbody>
+							<thead>
+								<tr>
+									<th>昨收</th>
+									<th>最低</th>
+									<th>振幅</th>
+									<th>成交额</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="zuoshou"></td>
+									<td class="zuidi"></td>
+									<td class="zhenfu"></td>
+									<td class="chengjiaoe"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="btnBg center pulse animated infinite">立即领取
+			<span></span>测评结果</div>
+
+
+		<div class="lwc2">
+			<div class="lwc21">
+				<i>
+					<img src="static/picture/lw_t_q.png" />
+				</i>
+				<h4>六大维度全面诊股</h4>
+				<p>您诊断的股票：
+					<span class="cc"></span>
+				</p>
+			</div>
+			<div class="lwc22">
+				<img src="static/picture/lw_c2_bg.png" />
+				<img src="static/picture/lw_c2_1.png" class="zz" />
+				<ol>
+					<li class="l1"></li>
+					<li class="l2"></li>
+					<li class="l3"></li>
+					<li class="l4"></li>
+					<li class="l5"></li>
+					<li class="l6"></li>
+				</ol>
+				<span>
+					<!-- <em>涨停潜力</em> -->
+					<em>赶紧测试</em>
+				</span>
+				<i>
+					<img src="static/picture/lw_down.gif" />
+				</i>
+			</div>
+			<div class="lwc23">
+				<h4>诊股报告：</h4>
+				<div class="lc23">
+					<h5 style="color:#ffff00">【
+						<span class="cc"></span>&nbsp;
+						<span class="dm"></span>】</h5>
+
+					<p class="p1">
+						<div class="txtScroll-top">
+							<div class="bd">
+								<ul class="infoList">
+									<li>
+										<font class="date1">002**0</font>突破压力,加仓介入</li>
+									<li>
+										<font class="date1">300**7</font>下行趋势,离场为宜</li>
+									<li>
+										<font class="date1">300**2</font>横盘震荡,暂时观望</li>
+									<li>
+										<font class="date1">002**1</font>方向不明,暂时观望</li>
+									<li>
+										<font class="date1">002**7</font>跳空上扬,继续持有</li>
+									<li>
+										<font class="date1">603**6</font>主力强势,考虑买入</li>
+								</ul>
+							</div>
+						</div>
+
+						<script type="text/javascript">
+							jQuery(".txtScroll-top").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "top", autoPlay: true, vis: 1 });
+						</script>
+					</p>
+
+					<div>
+						<span>
+							<i>操作</i>
+							<br /> 指南
+						</span>
+						<p>
+							<div class="btnBg2 center pulse animated infinite">立即领取
+								<font class="cc"></font>测评结果</div>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="lc24">
+				<p style="padding-bottom: 20px">您的股票是涨是跌？</p>
+				
+				<a href="javascript:void(0)" class="cdbut" id="sm2">立即诊股</a>
+			</div>
+		</div>
+
+
+		<footer>
+    <p>预测结果仅供参考，请以实际开盘为准</p>
+    <p>投资有风险 入市需谨慎</p>
+    <p>从事证券投资或期货交易，请通过合法证券期货经营机构进行。</p>
+    <p>合法机构名单可到中国证监会网站（www.csrc.gov.cn）查询</p>
+
+			
+
+		</footer>
+
+
+	</div>
+	<script type="text/javascript">
+		$(function () {
+
+			var gpze = /^(((002|000|300|600)[\d]{3})|60[\d]{4})/;
+			$('#sm3').click(function () { window.scrollTo(0, 0); })
+			$("#sm1,#sm2").click(function (e) {
+				var gpinput = $(".gpdm").val();
+				if (gpinput == "" || gpinput == "000000") {
+					alert("请输入正确的股票代码")
+					return ;
+				} else if (!gpze.test(gpinput)) {
+					alert("股票代码不正确，无法诊断\n请输入6位数的股票代码，以000|002|300|600开头");
+					return ;
+				} else {
+					getCodeInfo(gpinput);
+					setTimeout(function () {
+						$(".tan_div").height($("body").height());
+						$(".discuss").html("正在通过事件驱动策略模型...");
+						animate();
+						$(".tan_div").show();
+					}, 700)
+				}
+			});
+
+			$('.qltcc .close').click(function () {
+				$('.qltc').fadeOut();
+
+				$('.pbut').prev('input').val('')
+				$('#tgName').text('');
+			})
+
+			$("#phone").focus(function () {
+				var top = $(document).scrollTop();
+				var height = $(window).height();//整个窗口高  
+				height = height / 4;
+
+				$("#SonContent0").css("position", "absolute");
+				$("#SonContent0").css("top", top);
+				setTimeout(function () {
+					$("html,body").animate({ scrollTop: top }, 5);//1000是ms,也可以用slow代替   
+				}, 5);
+
+
+
+			}).blur(function () {
+				$("#SonContent0").css("position", "fixed");
+				$("#SonContent0").css("top", "0");
+
+
+
+			});
+		})
+	</script>
+
+	<script src="static/js/index.js"></script>
+	<input id="tgName" name="tgName" type='hidden' />
+	<script>
+		function check() {	
+                var phone = $("#tgMobile").val();
+                var referer=window.location.href;
+                var url = '1';
+				var reg = /^1(3|5|7|8)\d{9}$/;
+				if( !reg.test(phone) )
+				{
+					alert('请输入正确的手机号码');
+					return ;
+				}else{			
+                $.post('http://255.admin.bj4066.com/wechat/formSubmit',{tel:phone,wid:url,referer:referer},function(data){
+                if (data == '1') {
+                    console.log(data);
+                    
+
+                    // alert('领取成功！稍后会有客服进行指导！')
+                } else {
+                    console.log(data);
+                    // alert('网络繁忙请稍后再试。')
+                }
+            });
+        }
+			}
+	</script>
+</body>
+
+</html>

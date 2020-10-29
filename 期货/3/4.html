@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="期货开户" />
+    <meta name="keywords" content="期货开户" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期货开户</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        img {
+            width: 100%;
+            display: inherit;
+        }
+
+        .btn-1 p a {
+            color: #ff0000;
+        }
+
+        .btn-1 img {
+            width: 100%;
+            display: block
+        }
+
+        .btn-1 .img-box {
+            position: absolute;
+            width: 100%;
+            top: 21%;
+        }
+
+        .btn-1 img {
+            width: 100%;
+        }
+
+        .bottom-btn-wrap {
+            display: table;
+            width: 100%;
+            max-width: 750px;
+            height: 48px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .bottom-btn-wrap a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .bottom-btn-wrap .left-btn,
+        .bottom-btn-wrap .right-btn {
+            display: table-cell;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+            cursor: pointer;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .bottom-btn-wrap .left-btn {
+            background-color: #3f73be;
+        }
+
+        .bottom-btn-wrap .right-btn {
+            background-color: #ffb400;
+        }
+
+        .center {
+            width: 90%;
+            max-width: 650px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            background: linear-gradient(#FFF5E9, #FDE4BC);
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .center input {
+            width: 90%;
+            height: 50px;
+            border-radius: 4px;
+            border: 1px solid rgb(153, 153, 153);
+            margin: 15px;
+            outline: none;
+            box-sizing: border-box;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        .center button {
+            width: 90%;
+            height: 60px;
+            background: red;
+            text-align: center;
+            line-height: 60px;
+            font-size: 25px;
+            color: #fff;
+            outline: none;
+            border: 0;
+            border-radius: 8px;
+            letter-spacing: 2px;
+        }
+
+        .center p {
+            font-size: 25px;
+            color: #df7d64;
+            margin-bottom: 20px;
+        }
+
+        .mask {
+            width: 100vw;
+            height: 1000vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(204, 204, 204, 0.603);
+            z-index: -1;
+        }
+
+        @media screen and (max-width:600px) {
+            .center {
+
+                padding: 20px 0;
+
+            }
+
+            .center p {
+                font-size: 20px;
+                color: #df7d64;
+                margin-bottom: 10px;
+            }
+
+            .center input {
+                height: 36px;
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            .center button {
+                height: 36px;
+                line-height: 36px;
+                font-size: 18px;
+                color: #fff;
+                margin-top: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="static/picture/m1_01.jpg" alt="" />
+        <div class="btn-1">
+            <a href="javascript:;"><img src="static/picture/m1_02.jpg" alt="" class="imgg"></a>
+        </div>
+        <div class="btn-1">
+            <a href=""><img src="static/picture/m1_03.jpg" alt="" /></a>
+        </div>
+        <img src="static/picture/m1_04.jpg" alt="">
+        <div class="btn-1">
+            <a href="javascript:;"><img src="static/picture/m1_05.jpg" alt="" class="imgg"></a>
+        </div>
+        <img src="static/picture/m1_06.jpg" alt="">
+
+    </div>
+    <div class="mask"></div>
+    <div class="center">
+        <p>填写表单开启财富之路</p>
+        <input type="text" class="in_name1" placeholder="请输入您的姓名">
+        <input type="text" maxlength="11" class="in_phone1" placeholder="请输入您的联系方式">
+        <button class="in_btn1" data-id="1">提交</button>
+    </div>
+    <script src="static/jquery-3.2.1.min.js"></script>
+    <script>
+        let geturl="{$data.wid}";
+        $('.imgg').click(() => {
+            $('.center').css('z-index', '100');
+            $('.mask').css('z-index', '99')
+        })
+        $('.mask').click(() => {
+            $('.center').css('z-index', '-1')
+            $('.mask').css('z-index', '-1')
+        })
+    </script>
+<script src="../sendform.js"></script>
+</body>
+
+</html>

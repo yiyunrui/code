@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面预览</title>
+    <style>
+        *{margin:0;padding:0;box-sizing: border-box;}
+        header{padding:16px 0 16px 30px;color:#fff;background:#34495e;font-size:25px;text-align: center;}
+        .page-future{max-width: 1200px;margin: 40px auto 0;}
+        .page-future h2{margin-bottom: 20px;}
+        .page-future ul{padding: 10px;}
+        .page-future ul li{width: 218px;margin-bottom: 10px;display: inline-block;margin-right: 13px;}
+        .page-future ul li img{width: 100%;}
+        @media screen and (max-width:500px){
+            header{font-size:18px}
+            .page-future{margin: 20px auto 0;}
+            .page-future h2{margin-bottom: 10px;font-size: 16px;}
+            .page-future ul li{width:46%;}
+            .page-future ul li:nth-of-type(odd){margin-right: 20px;}
+            .page-future ul li:nth-of-type(even){margin-right:0}
+            }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>期货股票页面预览</header>
+        <div class="page-future">
+            <h2>期货页面列表</h2>
+            <ul id="future">
+            </ul>
+            <h2>股票页面列表</h2>
+            <ul id="share">
+            </ul>
+        </div>
+    </div>
+    <script>
+        let future = document.getElementById('future')
+        let share = document.getElementById('share')
+        let futures = [
+                    {imgsrc:'img/1.png',href:'http://39.96.166.64/future-share/1'},
+                    {imgsrc:'img/2.png',href:'http://39.96.166.64/future-share/2'},
+                    {imgsrc:'img/3.png',href:'http://39.96.166.64/future-share/3'},
+                ];
+        let shares = [
+            {imgsrc:'img/4.png',href:'http://39.96.166.64/future-share/4'},
+            {imgsrc:'img/5.png',href:'http://39.96.166.64/future-share/5'},
+        ]
+        let cont = '';
+        let cont1 = '';
+        futures.forEach(item=>{
+            cont += `
+                <li>
+                    <a href="${item.href}" target="_blank">
+                        <img src="${item.imgsrc}" alt="">
+                    </a>
+                </li>
+            `
+        })
+        shares.forEach(item=>{
+            cont1 += `
+                <li>
+                    <a href="${item.href}" target="_blank">
+                        <img src="${item.imgsrc}" alt="">
+                    </a>
+                </li>
+            `
+        })
+        future.innerHTML = cont;
+        share.innerHTML = cont1;
+    </script>
+</body>
+</html>
