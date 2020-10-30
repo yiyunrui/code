@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+@media screen and (min-width: 750px) {
+    html {
+      font-size:75px !important;
+ } } 
+
+.cont{
+    width: 10rem;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+section.bot{
+    width: 10rem;
+    position: relative
+    ;
+}
+
+section.bot .btn{
+    position: absolute;
+    width: 8rem;
+    top: 0.266667rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: btns 1s linear infinite;
+}
+
+.tan{
+   width: 8.133333rem;
+    position: fixed;
+   height: 9.333333rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: #fff; */
+    display: none;
+}
+.tan .close{
+    width: 0.666667rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.tan .in_btn{
+    width: 7.1rem;
+    position: absolute;
+    bottom: 2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.tan .in_getCode{
+    width: 2.366667rem;
+    position: absolute;
+    bottom: 3.67rem;
+    right: 0.53rem;
+    cursor: pointer;
+}
+.tan input{
+    width: 6rem;
+    height: 1rem;
+    position: absolute;
+    /* background: red; */
+    border: 0;
+    cursor: pointer;
+    font-size: 0.373333rem;
+    outline: none;
+}
+.tan input:nth-child(1){
+    top: 1.85rem;
+    left: 1.5rem;
+}
+.tan input:nth-child(2){
+    top: 3.25rem;
+    left: 1.5rem;
+}
+.tan input:nth-child(3){
+    width: 4.1rem;
+    top: 4.64rem;
+    left: .7rem;
+}
+.zhezhao{
+    width: 10rem;
+    height: 100vh;
+    background: rgba(238, 231, 231, 0.616);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.topb{
+    width: 10rem;
+    position: relative;
+}
+
+
+.topb p{
+    color: #ffe9be;
+    text-align: center;
+   font-size: 0.4rem;
+    position: absolute;
+    top: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0.026667rem;
+}
+.topb input{
+    position: absolute;
+    width:8rem;
+    height: 1.066667rem;
+    border: 0.026667rem solid #ffe9be;
+    border-radius: 0.133333rem;
+    outline: none;
+    color: #fff;
+    font-size: 0.3rem;
+    left: 0.9rem;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 0.266667rem;
+
+}
+.topb .in_name1{
+    top:1.8rem;
+}
+.topb .in_phone1{
+    top:3.3rem;
+}
+.topb .in_code1{
+    width: 5.4rem;
+    top: 4.8rem;
+}
+.topb .in_getCode1{
+    position: absolute;
+    width: 2.4rem;
+    top: 4.8rem;
+    height: 1.066667rem;
+    right: 1.1rem;
+    border-radius: 0.133333rem;
+    border: 0.026667rem solid #ffe9be;
+    font-size: 0.373333rem;
+    letter-spacing: 0.026667rem;
+    outline: none;
+    background: #ffe9be;
+}
+.topb .in_btn1{
+    position: absolute;
+    width: 8rem;
+   height: 1.066667rem;
+    top: 6.3rem;
+    left: 49%;
+    transform: translateX(-50%);
+    border: 0;
+    border-radius: 0.133333rem;
+    font-size: 0.4rem;
+    letter-spacing: 0.04rem;
+    /* font-weight: bold; */
+    outline: none;
+
+    color: linear-gradient(to right,#9d01ec,#4a03d1,#1805c0);
+    background: linear-gradient(to right,#fda,#fffde9,#fda);
+}
+.topb .tishi{
+    position: absolute;
+    bottom: .3rem;
+    left: 0.866667rem;
+    font-size: 0.213333rem;
+    color: #ffe9be;
+    letter-spacing: 0.026667rem;
+}
+.topb .tishi em{
+    font-style: normal;
+    color: red;
+    margin-right: 0.133333rem;
+    font-size: 0.266667rem;
+    vertical-align: middle;
+}
+.bot a{
+    display: block;
+    width: 2.566667rem;
+    height: 0.4rem;
+    /* background: red; */
+    position: absolute;
+    bottom: 1.233333rem;
+    left: 5rem;
+    color: #ffe8c1;
+    font-size: 0.24rem;
+    cursor: pointer;
+
+}
+.footer{
+    position: fixed;
+    width: 10rem;
+    height:1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background: linear-gradient(to right,#9d01ec,#4a03d1,#1805c0);
+    align-items: center;
+}
+.footer a{
+    text-decoration:none;
+    display: block;
+    color: #ffe9be;
+    font-size: 0.4rem;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 0;
+}
+
+@keyframes btns{
+    0%{
+        transform:translateX(-50%) scale(1);
+    }
+    50%{
+        transform:translateX(-50%) scale(1.1);
+    }
+    100%{
+        transform:translateX(-50%) scale(1);
+    }
+}

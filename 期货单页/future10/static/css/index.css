@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+    min-width: 320px;
+    max-width: 750px;
+    width: 10rem;
+    margin: 0 auto; }
+@media screen and (min-width:750px){
+    html{
+        font-size: 75px !important;
+    }
+}
+.container img{
+    width: 100%;
+    display: block;
+}
+.container .sec1,.container .sec3{
+    position: relative;
+}
+
+
+
+.a_img{
+    position: absolute;
+    width: 2.6rem;
+    height: 1.6rem;
+    bottom: -3.2rem;
+    left: 6.1rem;
+    cursor: pointer;
+}
+.sec3 .zs{
+    position: absolute;
+    width: 3.2rem;
+    height: 1rem;
+    bottom: 3.7rem;
+    left: 6.5rem;
+    cursor: pointer;
+}
+.sec3 div{
+    width: 5.2rem;
+    height: 1.1rem;
+    bottom: 3rem;
+    left: .55rem;
+}
+.sec3 .zs{
+    bottom: 2.70rem;
+}
+.sec3 .gun{
+    position: absolute;
+    top: 32px;
+    width:90%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.sec2{
+    position: relative;
+}
+.sec2 .wei{
+    font-size: .35rem;
+    color: #ffffff;
+    width: 6rem;
+    height: 3rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 7rem;
+    right: .3rem;
+
+}
+.sec2 .wei input{
+    display: inline-block;
+    margin:0 .1rem .666667rem .133333rem;
+    width: .4rem;
+    height:.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align:-2px ;
+}
+.sec2 .cont{
+    width: 5rem;
+    height: 0.8rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 3.75rem;
+    left: 3.5rem;
+}
+.sec2 .cont input{
+    box-sizing: border-box;
+    padding-left: .266667rem;
+    font-size: .333333rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 0;
+    border-radius:5px;
+    outline: none;
+    color: rgb(167, 161, 161);
+}
+.sec2 .date{
+    font-size: .4rem;
+    color: #ffffff;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 3.7rem;
+    bottom: 2.8rem;
+}
+.sec2 .date input{
+    background-color: #fff;
+    border-radius: 50%;
+    width: .4rem;
+    height: .4rem;
+    margin-right: .1rem;
+    vertical-align:-2px ;
+
+}
+.sec2 .suan{
+    width: 8rem;
+    height: 1.4rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: .8rem;
+    left: 1rem;
+    cursor: pointer;
+
+}
+
+.sec4{
+    position: relative;
+}
+.sec4 .xz{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    bottom: 1.5rem;
+    left: 2.45rem;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    0% {
+transform:rotate(0deg) ;
+    }
+    100%{
+transform:rotate(360deg) ;
+
+    }
+}
+.tan{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.603);
+}
+
+.tan div{
+    width: 8.2rem;
+    height: 7.44rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../images/tan.png);
+    background-size:100% 100% ;
+}
+
+.tan div input{
+    width: 6.426667rem;
+    height: 1.213333rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin:3.9rem 0 0 .893333rem;
+    outline: none;
+    text-align: center;
+    font-size: .333333rem;
+}
+.tan div button{
+    width: 5.16rem;
+    height: 1.16rem;
+    /* border: 1px solid black; */ 
+    margin-top: .2rem;
+    margin-left: 1.5rem;
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+.tan div .close{
+    display: inline-block;
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    width: .48rem;
+    height: .48rem;
+    cursor: pointer;
+}
+.tan div .code{
+    position: absolute;
+    color:yellow;
+    font-weight:bold;
+    top: 1.57rem;
+    left: 5rem;
+    font-size: .4rem;
+}
+
+
+.wei span{
+    display: inline-block;
+    margin: 0 .266667rem .4rem 0;
+}
+.wei span i,.date span i{
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    vertical-align: middle;
+
+}
+.wei span .bgc::after{
+    display: inline-block;
+    content: '';
+    width: .3rem;
+    height: .3rem;
+    background:red;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+.date span .bgd::after{
+    display: inline-block;
+    content: '';
+    width: .3rem;
+    height: .3rem;
+    background:red;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+.contentbox .header {
+    height: 10.44rem;
+    background: url(../images/header.jpg) center no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    padding: 4.16rem 0 0;
+}
+.contentbox .header .anibox {
+    position: relative;
+}
+.contentbox .header .anibox .round {
+    width: 4.64rem;
+    height: 4.64rem;
+    margin: 0 0 0 1.4rem;
+    background: url(../images/round.png) center no-repeat;
+    background-size: 100%;
+    animation: xuzh 20s linear infinite;
+}
+.contentbox .header .anibox .zhizhen {
+    position: absolute;
+    top: 2.06rem;
+    left: 2.22rem;
+    width: 3rem;
+    height: 0.55rem;
+    background: url(../images/zhizhen.png) center top no-repeat;
+    background-size: 100% auto;
+    animation: xuzh 3s linear infinite;
+}
+}
+@keyframes xuzh {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.contentbox .header .tit {
+    text-align: center;
+    margin: 0.8rem auto 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+}
+.contentbox .header .tit span {
+    color: #ffff02;
+}
+
+
+.yu_pho{
+   position: relative;
+}
+.y_ip1{
+    background: #cccccc;
+    position: absolute;
+    top: 2.7rem;
+    left: 1.45rem;
+    width: 7.15rem;
+    height: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.5rem;
+    text-align: center;
+}
+.y_ip11{
+    background: #ffffff;
+    position: absolute;
+    top: 2.4rem;
+    left: 3rem;
+    width: 6rem;
+    height: 0.74rem;
+    border: 1px solid #ffffff ;outline:none;;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.btn1{
+    position: absolute;
+    top: 6.2rem;
+    left: 0.9rem;
+    width: 8.5rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background-color:transparent;
+    font-size: 0.2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.y_ip12{
+    background: #ffffff;
+    position: absolute;
+    top: 3.75rem;
+    left: 3rem;
+    width: 6rem;
+    height: 0.74rem;
+    border: 1px solid #ffffff ;outline:none;;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.y_ip2{
+     background: #cccccc;
+     position: absolute;
+     top: 4rem;
+     left: 1.45rem;
+     width: 7.15rem;
+     height: 0.8rem;
+     border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.5rem;
+    text-align: center;
+ }
+.btn{
+    position: absolute;
+    top: 5.15rem;
+    left: 2.63rem;
+    width: 4.84rem;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    background: red;
+    color: yellow;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.yu_pho>p:nth-child(1){
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff;
+    font-size: 0.35rem;
+}
+.yu_pho>p:nth-child(2){
+    width: 100%;
+     position: absolute;
+     top: 45%;
+     left: 50%;
+     transform: translate(-45%);
+     color: #ffffff;
+    font-size: 0.32rem;
+ }
+.yu_pho>p:nth-child(3){
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff;
+    font-size: 0.35rem;
+}
+.yu_box{
+    position: absolute;
+    top: 6rem;
+    left: 2.6rem;
+    width: 4.7rem;
+    height: 5rem;
+
+}
+.yu_pho1{
+    display: none;
+    width: 8rem;
+    position: fixed;
+    z-index: 9999;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.btn2{
+
+    position: absolute;
+    top: -.1rem;
+    right: 0.1rem;
+    font-size: 0.5rem;
+}
+
+
+
+.code{
+    position: absolute;
+    top:5rem;
+    width: 8.16rem;
+    height: 0.74rem;
+    left: .92rem;
+    border: 1px solid #545454;
+    display: flex;
+
+}
+.code input{
+    width: 5rem;
+    height: 0.74rem;
+    background: #fff;
+    border: 0;
+    outline: none;
+   text-align: center;
+   font-size: .24rem;
+}
+.code .getCode1{
+    width: 3.2rem;
+    height: 0.74rem;
+    background: #1f79cf;
+    border: 0;
+    outline: none;
+    font-size: .24rem;
+    color: #fff;
+    letter-spacing: .013333rem;
+}

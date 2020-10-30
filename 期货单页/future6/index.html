@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>免费领取期货策略</title>
+
+</head>
+<body>
+    <style>
+     .yu_pho{
+   position: relative;
+}   
+.code{
+    position: absolute;
+    top:6.3rem;
+    width: 7.3rem;
+    height: 0.74rem;
+    left: 1.35rem;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.code input{
+    width: 7rem;
+    height: 0.74rem;
+    background: #fff;
+    border: 0;
+    outline: none;
+   text-align: center;
+   font-size: .24rem;
+   box-sizing: border-box;
+    border: 1px solid #878787;
+   border-radius: 8px 0 0 8px; 
+
+}
+.form2 .code{
+    left: 1.3rem;
+    width: 7.3rem;
+    top: 4.6rem;
+}
+.form2 .code input{
+    width: 6rem;
+}
+.code .getCode1{
+    width: 3.2rem;
+    height: 0.74rem;
+    background: #1f79cf;
+    border: 0;
+    outline: none;
+    font-size: .24rem;
+    color: #fff;
+    letter-spacing: .013333rem;
+}
+
+    </style>
+
+    <div class="container">
+        <section class="sec1">
+            <img src="static/picture/1.jpg" alt="">
+            <div class="yu_pho" >
+                <img src="static/picture/2.gif" alt="">
+                <input type="text" class="y_ip11 in_name" placeholder="请在此处输入姓名" id="name1">
+                <input type="text" class="y_ip12 phone in_phone" placeholder="点击此处输入手机号领取"  maxlength="11" id="phone1">
+                <div class="code">
+                    <input type="text" class="codeCont in_code" id="codeCont1">
+                    <button class="getCode1 in_getCode">点击获取验证码</button>
+                </div>
+                <span class="btn1 btn_tel in_btn" id="btn1"></span>
+            </div>
+
+            <div>
+
+            <img src="static/picture/3.jpg" alt="">
+
+            </div>
+
+
+            <img src="static/picture/4.jpg" alt="">
+            <div class="yu_pho form2" >
+                <img src="static/picture/5.gif" alt="">
+                <input type="text" class="y_ip13 in_name1" placeholder="请在此处输入姓名" id="name2">
+                <input type="text" class="y_ip14 phone in_phone1" placeholder="点击此处输入手机号领取"  maxlength="11" id="phone2">
+                <div class="code">
+                    <input type="text" class="codeCont in_code1" id="codeCont2">
+                    <button class="getCode1 in_btn1">点击获取验证码</button>
+                </div>
+                <span class="btn1 btn_tel" style="top: 5.5rem;left: 1.5rem" id="btn2"></span>
+            </div>
+            <img src="static/picture/6.jpg" alt="">
+        <div class="yu_img">
+                <p>投资有风险，选择需谨慎</p>
+                <p>从事证券投资或期货交易，请通过合法证券期货经营机构进行.</p>
+                <p>江西瑞奇期货有限公司</p>
+        </div>
+        </section>
+    </div>
+    <script src="static/js/flexible.js"></script>
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/sendform.js"></script>
+</body>
+</html>

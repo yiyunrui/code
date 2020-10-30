@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    
+    <title></title>
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<meta charset="utf-8">
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        body {
+            width:750px;
+            margin:0 auto;
+        }
+        .bgimg1 {
+            background-image:url(static/images/1_01.gif);
+            background-size:100% 105%;
+            height:811px;
+            position: relative;
+        }
+         .bgimg2 {
+            background-image:url(static/images/2_02.gif);
+            background-size:100% 108%;
+            height:987px;
+             position: relative;
+        }
+          .bgimg3 {
+            background-image:url(static/images/3_03.gif);
+            background-size:100% 110%;
+            height:988px;
+              position: relative;
+        }
+           .bgimg4 {
+            background-image:url(static/images/4_041.jpg);
+            background-size:100% 100%;
+            height:186px;
+                text-align: center;
+        }
+        .tanchu {
+           position: fixed;
+          display:none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+            z-index:8;
+        }
+         .tanchu .tkimg {
+            background-image:url(static/images/tk-9.png);
+            width:610px;
+            height:650px;
+            background-size:100% 100%;
+            position:fixed;
+            top:50%;
+            left:50%;
+            margin-top:-325px;
+            margin-left:-305px;
+            z-index:9;
+        }
+        .tanchu .tkbj {
+            position:fixed;
+            width:100%;
+            height:100%;
+            z-index:8;
+            background-color:#000000;
+            opacity:0.4;
+        }
+        .inpimg {
+           position: relative;
+    top: 240px;
+    left: 80px;
+        }
+        .inptext1 {
+             width: 460px;
+    height: 67px;
+    /* margin-left: 12rem; */
+    font-size: 28px;
+    position: relative;
+    /*top: 15.2rem;
+    left: 8.6rem;*/
+     top:174px;
+    left:100px;
+        }
+        .inptext2 {
+             font-size: 28px;
+    position: relative;
+    /*top: 18.5rem;*/
+    width: 460px;
+    height: 67px;
+    /*left: 8.6rem;*/
+    top:210px;
+    left:100px;
+        }
+         .inptext3 {
+           font-size: 28px;
+    position: relative;
+    /*top: 21.2rem;*/
+    top:208px;
+    height: 72px;
+    width: 310px;
+    /*left: 5.1rem;*/
+    left:53px;
+        }
+        .tkbtn {
+               position: relative;
+    /*top: 23rem;
+    left: 4rem;*/
+    top:240px;
+    left:45px;
+    cursor: pointer;
+        }
+        .tkclose {
+          position: absolute;
+    right: 0;
+    cursor:pointer;
+        }
+         .ts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 8;
+            display:none;
+        }
+        .tsimg {
+          background-image: url(static/images/tkts.png);
+            width: 600px;
+            height: 450px;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -220px;
+            margin: -300px;
+            z-index: 9;
+            font-size:30px;
+            text-align:center;
+            
+        }
+        .tsbj {
+             position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background-color: #000000;
+    opacity: 0.4;
+        }
+                   @keyframes change { 
+	0% { transform: scale(1,1);}
+	50% {transform: scale(0.8,0.8);}
+	100% {transform: scale(1,1);}
+}
+@-moz-keyframes  change { 
+	0% { -moz-transform: scale(1,1);}
+	50% {-moz-transform: scale(0.8,0.8);}
+	100% {-moz-transform: scale(1,1);}
+}
+@-webkit-keyframes  change { 
+	0% { -webkit-transform: scale(1,1);}
+	50% {-webkit-transform: scale(0.8,0.8);}
+	100% {-webkit-transform: scale(1,1);}
+}
+        @-o-keyframes change {
+            0% {
+                -o-transform: scale(1,1);
+            }
+
+            50% {
+                -o-transform: scale(0.8,0.8);
+            }
+
+            100% {
+                -o-transform: scale(1,1);
+            }
+        }
+.btn1{
+
+        animation: change 1.5s linear infinite alternate;
+    -ms-animation: change 1.5s linear infinite alternate;
+    -moz-animation: change 1.5s linear infinite alternate;
+    -webkit-animation: change 1.5s linear infinite alternate;
+    -o-animation: change 1.5s linear infinite alternate;
+    position: absolute;
+    left: 60px;
+    top: 900px;
+}
+.btn2{
+        animation: change 1.5s linear infinite alternate;
+    -ms-animation: change 1.5s linear infinite alternate;
+    -moz-animation: change 1.5s linear infinite alternate;
+    -webkit-animation: change 1.5s linear infinite alternate;
+    -o-animation: change 1.5s linear infinite alternate;
+    position:absolute;
+    left: 80px;
+    bottom: 0px;
+
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="bgimg1">
+
+        <img src="static/picture/button.png" onclick="tc()" id="btnimg1" class="btn2" style="margin-bottom: -0.5rem">
+    </div>
+    <div class="bgimg2">
+        <img src="static/picture/button.png" onclick="tc()" id="btnimg2" class="btn2" style="margin-bottom: -1rem">
+    </div>
+    <div class="bgimg3">
+        <img src="static/picture/button.png" onclick="tc()" id="btnimg3" class="btn2" style="margin-bottom: -2rem">
+    </div>
+
+	    <div class="foonter" style="text-align:center;background-color: black;
+    color: white;">
+        <p
+                style="padding: 20px 0 20px 0;line-height: 42px;font-size: 22px;
+                background: #071039;
+
+">
+
+投资有风险，入市须谨慎<br>
+从事证券投资或期货交易，请通过合法证券期货经营机构进行。<br>
+江西瑞奇期货有限公司
+
+
+
+        </p>
+        
+    </div>
+    <div class="tanchu" id="tanchu">
+        <div class="tkimg">
+            <p style="
+        color: yellow;
+    font-style: italic;
+    left: -80px;
+    font-size: 35px;
+    /* margin-left: -10rem; */
+    position: absolute;
+    top: 73px;
+    left: 330px;
+" id="text1">50</p>
+            <img src="static/picture/00_03.png" class="tkclose" id="tkgb">
+            <input type="text" placeholder="请输入您的姓名" class="inptext1 in_name" id="tg_name1">
+            <input type="text" placeholder="请输入您的手机号" class="inptext2 in_phone" maxlength="11" id="tg_mbn1">
+            <input type="text" placeholder="请输入您的验证码" class="inptext3 in_code" maxlength="6" id="tg_code1">
+            <img src="static/picture/yzm.png" class="inpimg in_getCode" >
+            <img src="static/picture/btn-9.png" class="tkbtn in_btn" >
+            <input type="hidden" value="领指标" id="soonidea1">
+			<input type="hidden" value="验证码已发送到您手机上，请输入正确的验证码后领取绝秘指标！" id="subts">
+        </div>
+        <div class="tkbj"></div>
+    </div>
+    <div class="ts" id="wxts">
+        <div class="tsimg" style="">
+            <img src="static/picture/close.png" style="position:absolute;right:0;" onclick="bgts()">
+            <div style="margin-top:175px;">
+                <p>恭喜您！手机号已登记</p>
+                <p>我们的财富顾问将尽快联系您发送指标</p>
+                <p>请耐心等待!!</p>
+            </div>
+        </div>
+        <div class="tsbj"></div>
+    </div>
+    <script src="static/js/sendform.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 10) {
+                   $("#btnimg").removeClass("btn1");
+                   $("#btnimg").addClass("btn2");
+
+                } 
+               
+            });
+        });
+        function gb() {
+            $("#tanchu").hide();
+
+        }
+        $("#tkgb").click(function () {
+            $("#tanchu").hide();
+        });
+        function bgts() {
+            $("#wxts").hide();
+        }
+        function tc() {
+            $("#tanchu").show();
+
+        }
+    </script>
+</body>
+</html>

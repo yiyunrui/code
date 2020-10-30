@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3天学会炒期货</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/layer.css">
+	<link rel="stylesheet" href="static/css/comm.css">
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/layer.js"></script>
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+                border: none !important;
+            }
+
+            .cont {
+                max-width: 750px;
+                margin: 0 auto;
+            }
+
+            .banner {
+                position: relative;
+            }
+
+            .form-cont {
+                width: 88%;
+                margin: 0 6%;
+                padding: 15px 12px 4px 12px;
+                position: absolute;
+                bottom: 0;
+                border-radius: 6px;
+                box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+            }
+
+            .form-item {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .my-input {
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                border-radius: 6px;
+                border: 0.5px solid #ff9c9c;
+                outline: none;
+                font-size: 14px;
+                color: #333;
+                text-align: center;
+            }
+
+            .my-btn {
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                color: #fff;
+                font-weight: 550;
+                font-size: 15px;
+                border-radius: 6px;
+                text-align: center;
+                border: none;
+                background: -webkit-linear-gradient(
+                    left,
+                    #e83a1a,
+                    #ff7f3f
+                ); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(
+                    right,
+                    #e83a1a,
+                    #ff7f3f
+                ); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(
+                    right,
+                    #e83a1a,
+                    #ff7f3f
+                ); /* Firefox 3.6 - 15 */
+                background: linear-gradient(
+                    to right,
+                    #e83a1a,
+                    #ff7f3f
+                ); /* 标准的语法 */
+            }
+
+            .foot {
+                position: relative;
+            }
+
+            .btn-cont {
+                width: 88%;
+                margin: 0 6%;
+                padding: 0 12px;
+                position: absolute;
+                bottom: 10px;
+            }
+
+            .info {
+                color: #ff6464;
+                font-size: 12px;
+                text-align: center;
+                margin-top: 6px;
+            }
+
+            .scroll {
+                -ms-animation: change 1.8s linear infinite alternate;
+                -moz-animation: change 1.8s linear infinite alternate;
+                -webkit-animation: change 1.8s linear infinite alternate;
+                -o-animation: change 1.8s linear infinite alternate;
+            }
+
+            @keyframes change {
+                0% {
+                    transform: scale(1.1, 1.1);
+                }
+                50% {
+                    transform: scale(0.9, 0.9);
+                }
+                100% {
+                    transform: scale(1.1, 1.1);
+                }
+            }
+            .verification_code {
+			    width: 62%;
+			    margin-bottom: 10px;
+			}
+            .verification_btn {
+			    float: right;
+			    width: 35%;
+			    height: 38px;
+			    border-radius: 6px;
+			    border: 0.5px solid #ff9c9c;
+			    background: #fff;
+			    color: #999;
+			}
+        </style>
+    </head>
+
+    <body>
+    <div class="time" id="new_data" style="position:absolute; right:0; bottom:0; opacity:0;"><font>2019-07-10 &nbsp;&nbsp;16:03:31 </font></div>
+
+        <div class="cont" style="background: rgb(18, 50, 132);">
+            <div class="banner">
+                <img src="static/picture/1_2.png" id="img1" alt="">
+                <div class="form-cont ub ub-ver" style="background: rgb(21, 59, 161);">
+                <div class="form-item">
+                        <input type="text" id="xm_text"  class="my-input phone in_name" placeholder="请输入您的姓名">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" class="my-input phone dialog4_input phone1 in_phone" maxlength="11" placeholder="请输入您的联系方式">
+                    </div>
+                    <div class="verification_box">
+	                    <input type="text" class="my-input verification_code in-code" placeholder="请输入验证码" id="tg_cod2" style="border-radius:9px;">
+	                    <button type="button" class="verification_btn in_getCode" id="verification_btn2"><strong>获取验证码</strong></button>
+	                </div>
+                    <div class="form-item" style="margin-bottom: 0;">
+                        <div class="my-btn submit  dialog4_btn in_btn" id="btn1">立即申请免费学习</div>
+                    </div>
+                    <div class="info">*稍后会有客服人员联系您*</div>
+                </div>
+            </div>
+            <div class="cont" style="background: rgb(18, 50, 132);">
+                <img src="static/picture/2_2.png" id="img2" alt="">
+                <div class="foot">
+                    <img src="static/picture/3_2.png" id="img3" alt="">
+                    <div class="btn-cont">
+                        <div class="my-btn scroll">立即申请免费学习</div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <img src="static/picture/4_2.png" id="img4" alt="">
+            </div>
+        </div>
+        <div class="loading hide"></div>
+     
+    <div class="modal-wrapper modal_wrapper  svelte-1j0zf1f" style=""><div class="mask svelte-1j0zf1f"></div>
+  <div class="window svelte-1j0zf1f" style=" "><div class="close svelte-1j0zf1f" style=""></div>
+    <!----><div class="icon success svelte-12nigtj"></div>
+  <div class="message svelte-12nigtj" style="text-align:center; padding:0.5rem 2rem;">提交成功！<br>客服将在第一时间内与您联系，请保持电话畅通。若您手机号是微信号我们会第一时间加您！</div>
+  
+  </div></div>
+    
+    <script>
+	 $(document).ready(function($){
+		 $('.close').click(function(){
+
+		 $('.modal_wrapper').hide();
+		 
+		 })
+		 $('.scroll').unbind().click(function() {
+            smoothscroll()
+         })
+		function smoothscroll() {
+	    	var currentScroll = document.documentElement.scrollTop || document.body.scrollTop
+		    if (currentScroll > 0) {
+		        window.requestAnimationFrame(smoothscroll)
+		        window.scrollTo(0, currentScroll - currentScroll / 5)
+		    }
+		}
+	 })
+    </script>
+    <script src="static/js/sendform.js"></script>
+
+</body>
+ </html>

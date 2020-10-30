@@ -1,0 +1,153 @@
+.ub {
+
+    display: -webkit-box !important;
+
+    display: box !important;
+
+    position: relative;
+
+}
+
+
+
+.ub-ver {
+
+    -webkit-box-orient: vertical;
+
+    box-orient: vertical;
+
+}
+
+
+
+.ub-f1 {
+
+    position: relative;
+
+    -webkit-box-flex: 1;
+
+    box-flex: 1;
+
+}
+
+
+
+.ub-ac {
+
+    -webkit-box-align: center;
+
+    box-align: center;
+
+}
+
+
+
+.ub-ae {
+
+    -webkit-box-align: end;
+
+    box-align: end;
+
+}
+
+
+
+.ub-pc {
+
+    -webkit-box-pack: center;
+
+    box-pack: center;
+
+}
+
+
+
+.ub-pe {
+
+    -webkit-box-pack: end;
+
+    box-pack: end;
+
+}
+
+
+
+.loading {
+
+    width: 25px;
+
+    height: 25px;
+
+    background: url('../images/loading.gif') no-repeat center center;
+
+    background-size: 100% 100%;
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    -webkit-transform: translate(-50%, -50%);
+
+}
+
+
+
+input::-webkit-input-placeholder,
+
+textarea::-webkit-input-placeholder {
+
+    color: #999;
+
+}
+
+
+
+input:-moz-placeholder,
+
+textarea:-moz-placeholder {
+
+    color: #999;
+
+}
+
+
+
+input::-moz-placeholder,
+
+textarea::-moz-placeholder {
+
+    color: #999;
+
+}
+
+
+
+input:-ms-input-placeholder,
+
+textarea:-ms-input-placeholder {
+
+    color: #999;
+
+}
+
+.modal_wrapper { display:none;}
+.modal-wrapper.svelte-1j0zf1f{position:fixed;top:0;left:0;right:0;bottom:0;background-color:transparent;z-index:300}
+.modal-wrapper.hide.svelte-1j0zf1f{display:none}
+.mask.svelte-1j0zf1f{position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;opacity:1;background-color:rgba(0,0,0,0.5)}
+.window.svelte-1j0zf1f{ padding-bottom:0.64rem;position:absolute;left:50%;top:50%;width:27rem;padding-top:1.64rem;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);background:#FFFFFF;border-radius:0.21333333rem;font-family:PingFangSC-Regular;font-weight:bold}
+.close.svelte-1j0zf1f{position:absolute; right:0; width:2.5rem;height:1.5rem;box-sizing:content-box;cursor:pointer}
+.close.svelte-1j0zf1f::before{content:'';display:block;width:100%;height:100%;background-image:url(../images/close.jpg);background-repeat:no-repeat;background-size:contain}
+.icon.svelte-12nigtj{margin: 0 auto;
+    width: 3rem;
+    height:3rem;
+    background-image:url(../images/ico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message{ font-size:2.0rem; line-height:2.5rem;}
+

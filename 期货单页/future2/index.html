@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>量化指标</title>
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <meta charset="utf-8">
+  </head>
+<body>
+    <div class="bgimg1"></div>
+    <div class="bgimg2"></div>
+    <div class="bgimg3"></div>
+    <div class="bgimg4">
+        <p style="
+        color: yellow;
+    font-style: italic;
+    left: -80px;
+    font-size: 48px;
+    /* margin-left: -10rem; */
+    margin-top: 10;
+    position: relative;
+    top: 115px;" id="text">79985</p>
+        <img src="static/picture/button.png" onclick="tc()" id="btnimg" class="btn2">
+    </div>
+    <div class="bgimg5"></div>
+    <div class="bgimg6"></div>
+    <div class="foonter" style="text-align:center;background-color: black;
+    color: white;">
+        <span class="RecordNumber">投资有风险，入市需谨慎</span>&nbsp;<br>
+        <span>从事证券投资或期货交易，请通过合法证券期货经营机构进行。<br>合法机构名单可登陆此网站查询 （www.csrc.gov.cn)查询</span><br>
+                版权所有：江西瑞奇期货有限公司
+            </div>
+    <div class="tanchu" id="tanchu">
+                <div class="tkimg">
+            <img src="static/picture/00_03.png" class="tkclose" id="tkgb">
+            <input type="text" placeholder="请输入您的姓名" class="inptext1 in_name" id="tg_name1">
+            <input type="text" placeholder="请输入您的手机号" class="inptext2 in_phone" maxlength="11" id="tg_mbn1">
+             
+            <div class="vetriocod">
+                <input type="text" placeholder="请输入您的验证码" class="inptext3 in_code"  id="tg_code1">
+                <button class="inpimg in_getCode">获取验证码</button>
+            </div>
+                        <img src="static/picture/btn-9.png" class="tkbtn in_btn">
+           
+        </div>
+                <div class="tkbj"></div>
+    </div>
+    <div class="ts" id="wxts">
+        <div class="tsimg" style="">
+            <img src="static/picture/close.png" style="position:absolute;right:0;" onclick="bgts()">
+            <div style="margin-top:175px;">
+                <p>恭喜您！手机号已登记</p>
+                <p>我们的财富顾问将尽快联系您发送指标</p>
+                <p>请耐心等待!!</p>
+            </div>
+        </div>
+        <div class="tsbj"></div>
+    </div>
+    <script>
+      
+
+   
+        $("#tkgb").click(function () {
+            $("#tanchu").hide();
+        });
+
+        function bgts() {
+            $("#wxts").hide();
+        }
+
+        function tc() {
+            $("#tanchu").show();
+
+        }
+       
+        
+    </script>
+    <script src="static/js/sendform.js"></script>
+</body>
+
+</html>

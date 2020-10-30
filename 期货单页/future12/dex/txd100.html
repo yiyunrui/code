@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+		<meta name="renderer" content="webkit"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>20年唯一免费版，股民必备专业级炒股软件</title>
+		<!--页面分享出去连接上的缩略文字-->
+		<link rel="stylesheet" type="text/css" href="/Content/ths/css/style.css?v=1.0">
+		<link rel="stylesheet" type="text/css" href="/Content/ths/css/main.css?v=1.0">
+		<script>
+		    var phoneWidth = parseInt(window.screen.width);
+		    var phoneHeight = parseInt(window.screen.height);
+		    var phoneScale = phoneWidth / 750;//除以的值按手机的物理分辨率
+		    var ua = navigator.userAgent;
+		    if (/Android (\d+\.\d+)/.test(ua)) {
+		        var version = parseFloat(RegExp.$1);
+		        // andriod 2.3
+		        if (version > 2.3) {
+		            document.write('<meta name="viewport" content="width=device-width,initial-scale=' + phoneScale + ',minimum-scale=' + phoneScale + ',maximum-scale=' + phoneScale + ',user-scalable=no">');
+		            // andriod 2.3以上
+		        } else {
+		            document.write('<meta name="viewport" content="width=device-width,user-scalable=no">');
+		        }
+		        // 其他系统
+		    } else {
+		        document.write('<meta name="viewport" content="width=device-width, initial-scale=' + phoneScale + ',minimum-scale=' + phoneScale + ',maximum-scale =' + phoneScale + ',user-scalable=no,">');
+		    }
+		</script>
+	</head>
+	<body>
+	    <section class="banner">
+	    	<div class="container">
+	    		<img src="/Content/ths/images/banner_img_txd.png" class="pc"/>
+	    		<img src="/Content/ths/images/mobile/banner_img1_txd.jpg" class="mobile"/>
+	    		<img src="/Content/ths/images/mobile/banner_img2.jpg" class="mobile"/>
+	    		<a class="down_load_btn1" id="btn1" href="javascript:void(0);"></a>
+	    		<a class="down_load_btn2" id="btn2" href="javascript:void(0);"></a>
+	    	</div>
+	    </section>
+	    <section class="content">
+	    	<div class="container">
+	    		<div class="con1">
+	    			<img src="/Content/ths/images/con1_title.jpg" class="titleBox"/>
+	    			<div class="fourFeatures" id="fourFeatures">
+	    				<div class="fl active" data-test="1">
+	    					<img src="/Content/ths/images/con1_img1.jpg" class="imgBox"/>
+	    					<img src="/Content/ths/images/con1_text1.png" class="txtBox"/>
+	    					<div class="greyShade">
+	    						<img src="/Content/ths/images/con1_shade.png"/>
+	    					</div>
+	    					<div class="blueShade">
+	    						<img src="/Content/ths/images/back4.png"/>
+	    					</div>
+	    				</div>
+	    				<div class="fl" data-test="2">
+	    					<img src="/Content/ths/images/con1_img2.jpg" class="imgBox"/>
+	    					<img src="/Content/ths/images/con1_text2.png" class="txtBox"/>
+	    					<div class="greyShade">
+	    						<img src="/Content/ths/images/con1_shade.png"/>
+	    					</div>
+	    					<div class="blueShade">
+	    						<img src="/Content/ths/images/back4.png"/>
+	    					</div>
+	    				</div>
+	    				<div class="fl" data-test="3">
+	    					<img src="/Content/ths/images/con1_img3.jpg" class="imgBox"/>
+	    					<img src="/Content/ths/images/con1_text3.png" class="txtBox"/>
+	    					<div class="greyShade">
+	    						<img src="/Content/ths/images/con1_shade.png"/>
+	    					</div>
+	    					<div class="blueShade">
+	    						<img src="/Content/ths/images/back4.png"/>
+	    					</div>
+	    				</div>
+	    				<div class="fl" data-test="4">
+	    					<img src="/Content/ths/images/con1_img4.jpg" class="imgBox"/>
+	    					<img src="/Content/ths/images/con1_text4.png" class="txtBox"/>
+	    					<div class="greyShade">
+	    						<img src="/Content/ths/images/con1_shade.png"/>
+	    					</div>
+	    					<div class="blueShade">
+	    						<img src="/Content/ths/images/back4.png"/>
+	    					</div>
+	    				</div>
+	    				<div class="clear"></div>
+	    				<div class="ppTxt" id="ppTxt">
+	    					根据巴菲特的价值分析理论，独家研发全国率先推出估值空间分析技术，一键看清当前市场顶底，轻松定价估值低股个股。	
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="con2">
+	    			<a class="down_load_btn3" href="javascript:void(0);" id="btn3"></a>
+	    			<div class="imgBox">
+	    				<img src="/Content/ths/images/title_top.jpg" class="topTitleBox"/>
+	    				<img src="/Content/ths/images/con2_title.jpg" class="titleBox"/>
+	    			</div>
+					<div class="carousel">
+						<div class="slides">
+							<div><img src="/Content/ths/images/3-1.png"/></div>
+							<div><img src="/Content/ths/images/3-2.png"/></div>
+							<div><img src="/Content/ths/images/3-3.png"/></div>
+							<div><img src="/Content/ths/images/3-4.png"/></div>
+							<div><img src="/Content/ths/images/3-5.png"/></div>
+						</div>
+					</div>
+	    		</div>
+	    		<div class="con3">
+	    			<img src="/Content/ths/images/title_top.jpg" class="topTitleBox"/>
+	    			<img src="/Content/ths/images/con3_img.jpg" class="contentBox"/>
+	    		</div>
+	    	</div>
+	    </section>
+        <section class="registerUnite mobile">
+			<div class="container registercc">
+				<div class="titlebox">
+					<h4>免费下载软件</h4>
+					<i>提示：正确填写手机号码，免费领取分析师战队服务一周</i>
+				</div>
+				<div class="formBox" id="getTelBox">
+					<div class="changeList">
+						<input type="text" class="username" name="MemName" placeholder="中文姓名"/>
+					</div>
+					<div class="changeList">
+						<input type="tel" class="tel" name="Tel" placeholder="手机号（用来接收密码短信）"/>
+					</div>
+					<div class="changeList">
+						<input type="text" class="code" name="MsgCode" placeholder="短信验证码"/>
+						<a href="javascript:void(0);" flag="sendmsg">获取验证码</a>
+					</div>
+					<div class="clear"></div>
+					<button type="buttton" flag="register" >免费下载</button>
+				</div>
+			</div>
+		</section>
+        <footer>
+            <div class="footerbox2 pc">投资有风险，入市需谨慎！</div>
+            <div class="phonebox2 mobile">投资有风险，入市需谨慎！</div>
+        </footer>
+        <div class="fixedHeight pc"></div>	 
+        <header class="header pc">
+            <div class="headerbox">
+                 <div class="form registercc">
+                    <div class="fl"><input type="text" name="MemName" placeholder="请输入您的姓名"></div>
+                    <div class="fl"><input type="text"  name="Tel" placeholder="请输入您的手机号"></div>
+                    <div class="fl bcodeDiv"><a class="bcode"  flag="sendmsg">免费获取验证码</a></div>
+                    <div class="fl"><input type="text" name="MsgCode" placeholder="请输入验证码"></div>
+                    <a class="fl bDown" flag="register"><img src="/Content/ths/images/button.gif"/></a>
+                 </div>
+                 <div class="clear"></div>
+            </div>
+        </header>
+		<!--弹出框-->
+		<section class="windowBox" id="popupId">
+			<div class="popupBox registercc">
+				<h4>提交信息</h4>
+				<div class="registList">
+					<input type="text" class="username" name="MemName" placeholder="请填写您的姓名"/>
+					<span class="errorTip" style="display: none;">错误提示</span>
+				</div>
+				<div class="registList">
+					<input type="tel" class="tel" name="Tel" placeholder="请填写您的手机号码"/>
+					<span class="errorTip" style="display: none;">错误提示</span>
+				</div>
+				<div class="registList">
+					<input type="text" class="code" name="MsgCode" placeholder="请输入验证码"/>
+					<a href="javascript:void(0);"  flag="sendmsg">获取验证码</a>
+					<span class="errorTip" style="display: none;">错误提示</span>
+				</div>
+				<div class="clear"></div>
+				<button type="buttton" class="submitBtn"  flag="register">立即领取</button>
+				<a class="closeBtn" href="javascript:void(0);" id="closeBtnId">X</a>
+			</div>
+		</section>
+		<script type="text/javascript" src="/Content/ths/js/jquery-1.11.3.js"></script>
+        
+        <script type="text/javascript" src="/Scripts/registerplus.js"></script>
+		<script type="text/javascript" src="/Content/ths/js/myCarousel.js"></script>
+		<script>
+		    $(document).ready(function () {
+		        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		            $('.carousel').carousel({
+		                directionNav: true,//手动干预后仍然能播放
+		                speed: 300, //轮播速度
+		                carouselWidth: 750,//父元素宽
+		                carouselHeight: 220,//父元素高
+		                frontWidth: 200,//子元素宽
+		                frontHeight: 150,//子元素高
+		                hAlign: 'center',
+		                vAlign: 'bottom',
+		                autoplay: true,
+		                autoplayInterval: 3000,//轮播间隔时间
+		                shadow: true,
+		                reflection: false,
+		                reflectionHeight: 0.2,
+		                reflectionOpacity: 0.5,
+		                description: false,
+		                descriptionContainer: '.carousel_description'
+		            });
+		        } else {
+		            $('.carousel').carousel({
+		                directionNav: true,//手动干预后仍然能播放
+		                speed: 300, //轮播速度
+		                carouselWidth: 1010,//父元素宽
+		                carouselHeight: 220,//父元素高
+		                frontWidth: 270,//子元素宽
+		                frontHeight: 190,//子元素高
+		                hAlign: 'center',
+		                vAlign: 'bottom',
+		                autoplay: true,
+		                autoplayInterval: 3000,//轮播间隔时间
+		                shadow: true,
+		                reflection: false,
+		                reflectionHeight: 0.2,
+		                reflectionOpacity: 0.5,
+		                description: false,
+		                descriptionContainer: '.carousel_description'
+		            });
+		        }
+		    });
+		</script>
+		<script>
+		    $(function () {
+		        //控制弹出层
+		        $("#btn1").click(function (event) {
+		            $("#popupId h4").html("电脑版下载");
+		            $("#popupId").show();
+		            event.stopPropagation();
+		        });
+		        $("#btn2").click(function (event) {
+		            $("#popupId h4").html("手机版下载");
+		            $("#popupId").show();
+		            event.stopPropagation();
+		        });
+		        $("#btn3").click(function (event) {
+		            $("#popupId h4").html("免费下载");
+		            $("#popupId").show();
+		            event.stopPropagation();
+		        });
+		        $(".popupBox").click(function (event) {
+		            event.stopPropagation();
+		        });
+		        $("#closeBtnId").click(function (event) {
+		            event.stopPropagation();
+		            $("#popupId").hide();
+		        });
+		        $(document).click(function () {
+		            $("#popupId").hide();
+		        });
+
+		        //tab切换
+		        var m = 1;
+		        $("#fourFeatures .fl").mouseover(function () {
+		            m = parseInt($(this).attr("data-test"));
+		            tabImgs();
+		        });
+		        function tabImgs() {
+		            if (m == 5) {
+		                m = 1;
+		            }
+		            $("#fourFeatures .fl").eq(m - 1).addClass("active").siblings().removeClass("active");
+		            switch (m) {
+		                case 1:
+		                    $("#ppTxt").html("根据巴菲特的价值分析理论，独家研发全国率先推出估值空间分析技术，一键看清当前市场顶底，轻松定价估值低股个股。");
+		                    break;
+		                case 2:
+		                    $("#ppTxt").html("首创智能变频分析技术，掌握各种行情下的正确选股策略；牛市追涨、熊市抄底、震荡市高抛低吸，智能切换指标系统，自动匹配操作策略，一切轻而易举！");
+		                    break;
+		                case 3:
+		                    $("#ppTxt").html("在主力资金的基础上独家披露你从未发现的敢死队资金，颠覆只跟主力的传统逻辑，捕捉短期涨跌背后的神秘推手；在波段抄底、超跌反弹应用中准确率超过90%！");
+		                    break;
+		                case 4:
+		                    $("#ppTxt").html("全面揭露行业重大信息、及时搜寻个股利好利空、深度捕捉高管增持内幕，智能评测手中个股，完美填补炒股空白，让您炒股不再三缺一。");
+		                    break;
+		                default:
+		                    $("#ppTxt").html("根据巴菲特的价值分析理论，独家研发全国率先推出估值空间分析技术，一键看清当前市场顶底，轻松定价估值低股个股。");
+		                    break;
+		            }
+		            m++;
+		        };
+		        setInterval(tabImgs, 3000);
+		    });
+		</script>
+         
+	</body>
+</html>
+

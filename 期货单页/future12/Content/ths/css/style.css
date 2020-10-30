@@ -1,0 +1,223 @@
+/*å¼¹å‡ºæ¡†_æ³¨å†Œä¿¡æ¯*/
+.windowBox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 10000;
+}
+.windowBox .popupBox {
+  position: absolute;
+  background-color: #fff;
+  padding: 50px;
+  z-index: 10001;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+.windowBox .popupBox h4 {
+  margin: auto;
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: #ff4728;
+  text-align: center; /*font-weight: normal;*/
+}
+.windowBox .popupBox .registList {
+  width: 548px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.windowBox .popupBox .registList span.errorTip {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #ff4728;
+  text-align: left;
+  padding-left: 28px;
+  position: absolute;
+  bottom: -18px;
+  left: 0px;
+}
+.windowBox .popupBox .registList input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  padding-left: 28px;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+}
+.windowBox .popupBox .registList input::-webkit-input-placeholder {
+  color: #999;
+}
+.windowBox .popupBox .registList input:-moz-placeholder {
+  color: #999;
+}
+.windowBox .popupBox .registList input:-ms-input-placeholder {
+  color: #999;
+}
+.windowBox .popupBox .registList input.code {
+  width: 390px;
+  float: left;
+}
+.windowBox .popupBox .registList a {
+  display: block;
+  width: 154px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f9e365;
+  color: #2e2e2e;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.windowBox .popupBox button.submitBtn {
+  width: 548px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ff4728;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.windowBox .popupBox a.closeBtn {
+  display: block;
+  position: absolute;
+  bottom: -73px;
+  left: 50%;
+  margin-left: -21px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  font-family: "å¾®è½¯é›…é»‘";
+  color: #fff; /*font-weight: bold;*/
+  font-size: 24px;
+}
+@media only screen and (max-width: 750px) {
+  .windowBox .popupBox h4 {
+    font-size: 36px;
+  }
+  .windowBox .popupBox .registList {
+    height: 74px;
+    margin-bottom: 40px;
+  }
+  .windowBox .popupBox .registList span.errorTip {
+    font-size: 26px;
+    bottom: -35px;
+    left: 0px;
+  }
+  .windowBox .popupBox .registList input {
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .windowBox .popupBox .registList a {
+    height: 74px;
+    line-height: 74px;
+    font-size: 26px;
+  }
+  .windowBox .popupBox button.submitBtn {
+    height: 74px;
+    line-height: 74px;
+    font-size: 28px;
+  }
+  .windowBox .popupBox a.closeBtn {
+    width: 66px;
+    height: 66px;
+    bottom: -115px;
+    line-height: 66px;
+    margin-left: -33px;
+    font-size: 38px;
+  }
+}
+.Tips {
+  height: 20rem;
+  width: 35rem;
+  background-color: white;
+  border-radius: 1rem;
+  position: fixed;
+  z-index: 20;
+  top: calc(50% - 10rem);
+  left: calc(50% - 17.5rem);
+  display: block;
+
+  transform: scale(0);
+  transition: 0.3s ease 0s;
+}
+
+.t_cont {
+  font-size: 1.5rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t_cont2 {
+  font-size: 1.5rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t_close {
+  font-size: 1.7rem;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ebbe79;
+  cursor: pointer;
+}
+
+.blank {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+  display: none;
+  z-index: 10;
+}
