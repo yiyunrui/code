@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+li {
+  list-style: none;
+}
+a,
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+input {
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+table {
+  border-collapse: collapse;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+html,
+body {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+.stockmatch {
+  background: #FFFFFF;
+  line-height: 0.5rem;
+}
+.stockmatch ul li {
+  color: #d98000;
+  font-size: 0.2rem;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+.stockmatch ul li span {
+  flex: 1;
+}
+.stockmatch ul li:nth-child(even) {
+  background: #efefef;
+}
+.stockmatch ul li:first-child {
+  background: #d98000;
+  font-size: 0.22rem;
+  color: #FFFFFF;
+  font-weight: initial;
+}
+.contentbox {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  background: #4687ce;
+}
+.contentbox .header {
+  height: 10.44rem;
+  background: url(../images/header.jpg) center no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  padding: 4.16rem 0 0;
+}
+.contentbox .header .anibox {
+  position: relative;
+}
+.contentbox .header .anibox .round {
+  width: 4.64rem;
+  height: 4.64rem;
+  margin: 0 0 0 1.4rem;
+  background: url(../images/round.png) center no-repeat;
+  background-size: 100%;
+  animation: xuzh 20s linear infinite;
+}
+.contentbox .header .anibox .zhizhen {
+  position: absolute;
+  top: 2.06rem;
+  left: 2.22rem;
+  width: 3rem;
+  height: 0.55rem;
+  background: url(../images/zhizhen.png) center top no-repeat;
+  background-size: 100% auto;
+  animation: xuzh 3s linear infinite;
+}
+@keyframes xuzh {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.contentbox .header .tit {
+  text-align: center;
+  margin: 0.8rem auto 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.4rem;
+  line-height: 0.7rem;
+}
+.contentbox .header .tit span {
+  color: #ffff02;
+}
+.contentbox .content {
+  padding: 0 0.38rem;
+}
+.contentbox .content .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  position: relative;
+}
+.contentbox .content .inbox input {
+  flex: 1;
+  color: #464646;
+  font-size: 0.36rem;
+  line-height: 0.46rem;
+  padding: 0.22rem 0;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding-left: 0.32rem;
+  border-radius: 0.1rem 0 0 0.1rem;
+}
+.contentbox .content .inbox input::-webkit-input-placeholder {
+  color: #b1b1b1;
+  font-weight: bold;
+}
+.contentbox .content .inbox a {
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 0.36rem;
+  width: 2.36rem;
+  background: #ff3030;
+  border-radius: 0 0.1rem 0.1rem 0;
+}
+.contentbox .content .intxt {
+  padding: 0.15rem 0;
+  text-align: right;
+  color: #FFFFFF;
+  font-size: 0.16rem;
+  line-height: 0.22rem;
+}
+.contentbox .content .table {
+  color: #FFFFFF;
+  font-size: 0.32rem;
+  text-align: center;
+  background: #1c5da4;
+  border-radius: 0.1rem;
+  padding: 0.3rem 0.2rem 0.2rem;
+}
+.contentbox .content .table .head {
+  height: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentbox .content .table .head ul {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentbox .content .table .head ul:nth-child(1) {
+  width: 2.92rem;
+  font-size: 0.48rem;
+}
+.contentbox .content .table .head ul:nth-child(1) .name {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  font-weight: bold;
+}
+.contentbox .content .table .head ul:nth-child(2) {
+  flex: 1;
+  font-size: 0.3rem;
+}
+.contentbox .content .table .head ul:nth-child(2) .xianjia {
+  line-height: 0.8rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding-right: 0.4rem;
+}
+.contentbox .content .table .head ul:nth-child(2) .time {
+  font-weight: initial;
+}
+.contentbox .content .table .head ul:nth-child(2).zhang .zd,
+.contentbox .content .table .head ul:nth-child(2).zhang .xianjia {
+  color: #ff4747;
+}
+.contentbox .content .table .head ul:nth-child(2).zhang .xianjia {
+  background: url(../images/arrow.png) right center no-repeat;
+  background-size: 0.41rem;
+}
+.contentbox .content .table .head ul:nth-child(2).die .zd,
+.contentbox .content .table .head ul:nth-child(2).die .xianjia {
+  color: #3dc240;
+}
+.contentbox .content .table .head ul:nth-child(2).die .xianjia {
+  background: url(../images/arrowdown.png) right center no-repeat;
+  background-size: 0.41rem;
+}
+.contentbox .content .table .cont {
+  padding: 0.3rem 0 0;
+}
+.contentbox .content .table .cont ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contentbox .content .table .cont ul li {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.5rem;
+}
+.contentbox .content .table .cont ul li span:nth-child(2) {
+  font-size: 0.36rem;
+}
+.contentbox .content .btn {
+  color: #FFFFFF;
+  font-size: 0.36rem;
+  text-align: center;
+  margin: auto;
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+  background: #ff3030;
+  border-radius: 0.1rem;
+  font-weight: bold;
+  animation: thescale 0.8s linear infinite alternate;
+}
+.contentbox .content .btn span {
+  color: #efec0a;
+}
+.contentbox .content .btn1 {
+  margin: 0.16rem 0 0;
+}
+.contentbox .content .img {
+  display: block;
+  width: 100%;
+  margin: 0.32rem 0;
+}
+@keyframes thescale {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+.contentbox .footer {
+  background: #2769b2;
+  padding: 0.3rem 0 0.4rem;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.contentbox .footer .tit {
+  color: #96afd3;
+  font-size: 0.24rem;
+  font-weight: bold;
+  margin-bottom: 0.18rem;
+  line-height: 0.4rem;
+}
+.contentbox .footer p {
+  color: #FFFFFF;
+  font-size: 0.18rem;
+  line-height: 0.3rem;
+}
+.pop {
+  display: none;
+}
+.mnc {
+  background: #fff;
+  width: 5.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+.mnc .box {
+  height: 2.75rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.mnc .box .txt {
+  font-size: 0.26rem;
+  line-height: 0.3rem;
+  color: #ec534f;
+  margin-bottom: 0.3rem;
+}
+.mnc .box .wrapbox {
+  width: 4.8rem;
+}
+.mnc .box .wrapbox .wrap {
+  background: #e5e5e5;
+  width: 100%;
+  display: block;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+}
+.mnc .box .wrapbox .wrap span {
+  display: block;
+  width: 0;
+  height: 0.3rem;
+  border-radius: 0.14rem;
+  background: #ff4e4a;
+  background-image: -webkit-linear-gradient(left, #ff4e4a, #e8241f);
+  background-image: -moz-linear-gradient(left, #ff4e4a, #e8241f);
+}
+.subbox {
+  background: #FFFFFF;
+  border: 0.02rem solid #e8241f;
+  box-shadow: 0 0 0 0.14rem #FFFFFF;
+  border-radius: 0.2rem;
+  width: 6.72rem;
+  height: 4.2rem;
+  text-align: center;
+  position: relative;
+}
+.subbox .close {
+  background: url(../images/close.png) center no-repeat;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  width: 0.48rem;
+  height: 0.48rem;
+  top: -0.2rem;
+  right: -0.2rem;
+}
+.subbox .tit {
+  padding: 0.3rem 0 0;
+  font-size: 0.36rem;
+  color: #252525;
+  line-height: 0.6rem;
+  font-weight: bold;
+}
+.subbox .tit span {
+  color: #e8241f;
+  font-size: 0.48rem;
+}
+.subbox .tit2 {
+  font-size: 0.3rem;
+  color: #606060;
+  line-height: 0.66rem;
+}
+.subbox .inbox {
+  padding: 0 0.36rem 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.subbox .inbox input {
+  width: 100%;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  padding: 0.15rem 0;
+  color: #8f8f8f;
+  font-size: 0.36rem;
+  text-align: center;
+  background: #eeeeee;
+  border: 0.02rem solid #bfbfbf;
+  border-radius: 0.1rem;
+}
+.subbox .inbox a {
+  width: 100%;
+  margin-top: 0.14rem;
+  height: 1rem;
+  line-height: 1rem;
+  color: #eeff63;
+  font-size: 0.48rem;
+  text-align: center;
+  border-radius: 0.1rem;
+  background: #E8241F;
+}
+.subbox .tishi {
+  font-size: 0.24rem;
+  color: #8f8f8f;
+  line-height: 0.62rem;
+}
+.layui-layer {
+  box-shadow: none!important;
+  position: absolute!important;
+}
+.layui-layer-content {
+  overflow: initial!important;
+}

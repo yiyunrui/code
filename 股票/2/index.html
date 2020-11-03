@@ -14,7 +14,23 @@
 	<link rel="stylesheet" href="static/css/style.css">
 	<script src="static/js/jquery.min.js"></script>
 	<script src="static/js/data-a.js"></script>
-	<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
+    <script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
+    <script>
+         window._agl = window._agl || [];
+        (function () {
+            _agl.push(
+                ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+            );
+            (function () {
+                var agl = document.createElement('script');
+                agl.type = 'text/javascript';
+                agl.async = true;
+                agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(agl, s);
+            })();
+        })();
+    </script>
 	<script>
 		$(function () {
 			setInterval(function () {
@@ -335,22 +351,19 @@
 		function check() {	
                 var phone = $("#tgMobile").val();
                 var referer=window.location.href;
-                var url = '1';
+                var url = '24dy002';
 				var reg = /^1(3|5|7|8)\d{9}$/;
 				if( !reg.test(phone) )
 				{
-					alert('请输入正确的手机号码');
+					alert('请输入正确格式的手机号码');
 					return ;
 				}else{			
-                $.post('http://255.admin.bj4066.com/wechat/formSubmit',{tel:phone,wid:url,referer:referer},function(data){
+                $.post('http://255.data.example001.cn/save.php',{tel:phone,url:url,referer:referer},function(data){
                 if (data == '1') {
-                    console.log(data);
-                    
-
-                    // alert('领取成功！稍后会有客服进行指导！')
+                    window._agl && window._agl.push(['track', ['success', {t: 3}]])
+                    alert('信息提交成功！稍后会有客服进行指导！')
                 } else {
-                    console.log(data);
-                    // alert('网络繁忙请稍后再试。')
+                    alert('网络繁忙请稍后再试。')
                 }
             });
         }
